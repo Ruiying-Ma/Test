@@ -1,0 +1,11 @@
+1. touch min
+	min: Untracked
+2. git add min
+	min: saved in buffer
+3. revise "min" using vim
+	Now there are two "min"'s: one is in buffer (original version), the other is unstaged (revised version)
+Problem: If we "git commit" now, the one in buffer will be committed instead of the revised one. 
+Solution: "git add" again
+
+4. git add min
+5. git commit -m "add min"
